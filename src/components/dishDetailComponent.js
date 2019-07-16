@@ -25,7 +25,7 @@ class DishDetail extends Component {
   }
 
   renderComments(comments) {
-    if (comments) {
+    if (comments != null) {
       return (
         <div>
           <h4>Comments</h4>
@@ -53,15 +53,15 @@ class DishDetail extends Component {
   }
 
   render() {
-    if (this.props.selectedDish != null)
+    if (this.props.dish != null)
       return (
         <div class="container">
         <div className="row">
           <div className="col-12 col-md-5 m-1">
-            {this.renderDish(this.props.selectedDish)}
+            {this.renderDish(this.props.dish)}
           </div>
           <div className="col-12 col-md-5 m-1">
-            {this.renderComments(this.props.selectedDish.comments)}
+            {this.renderComments(this.props.dish.comments)}
           </div>
         </div>
         </div>
