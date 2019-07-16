@@ -9,6 +9,7 @@ import {
 } from "reactstrap";
 
 class DishDetail extends Component {
+
   renderDish(dish) {
     if (dish != null)
       return (
@@ -54,6 +55,7 @@ class DishDetail extends Component {
   render() {
     if (this.props.selectedDish != null)
       return (
+        <div class="container">
         <div className="row">
           <div className="col-12 col-md-5 m-1">
             {this.renderDish(this.props.selectedDish)}
@@ -61,6 +63,7 @@ class DishDetail extends Component {
           <div className="col-12 col-md-5 m-1">
             {this.renderComments(this.props.selectedDish.comments)}
           </div>
+        </div>
         </div>
       );
     else return <div />;
