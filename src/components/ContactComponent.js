@@ -63,9 +63,9 @@ class Contact extends Component {
             errors.firstname = "First name should be <= 15 characters.";
 
         if(this.state.touched.lastname && lastname.length < 3)
-            errors.firstname = "Last name should be >= 3 characters.";
+            errors.lastname = "Last name should be >= 3 characters.";
         else if(this.state.touched.lastname && lastname.length > 15)
-            errors.firstname = "Last name should be <= 15 characters.";
+            errors.lastname = "Last name should be <= 15 characters.";
 
         const reg = /^\d+$/;
         //regex
@@ -147,7 +147,7 @@ class Contact extends Component {
                             placeholder="Last Name"
                             value={this.state.lastname}
                             valid={errors.lastname === ''}
-                                invalid={errors.lastname !== ''}
+                            invalid={errors.lastname !== ''}
                             onBlur={this.handleBlur('lastname')}
                             onChange={this.handleInputChange} />
                             <FormFeedback>{errors.lastname}</FormFeedback>
