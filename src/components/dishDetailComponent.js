@@ -18,7 +18,7 @@ const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
 
 
- 
+ // Assignment 3
     
 class CommentForm extends Component {
 
@@ -54,8 +54,7 @@ class CommentForm extends Component {
                             <Label htmlFor="rating" md={4}>Rating</Label>
                             <Col md={12}>
                                 <Control.select model=".rating" id="rating" name="rating"
-                                    className="form-control"
-                                      >
+                                    className="form-control">
                                       <option>1</option>
                                       <option>2</option>
                                       <option>3</option>
