@@ -2,7 +2,7 @@ import React from 'react';
 import {Link } from 'react-router-dom';
 import { Card, CardImg , CardImgOverlay, CardText , CardBody, CardTitle , Breadcrumb , BreadcrumbItem } from 'reactstrap'; 
 import { Loading } from './LoadingComponent';
-import {baseUrl} from '../shared/baseUrl'
+import {baseUrl} from '../shared/baseUrl';
 
   function RenderMenuItem({dish , onClick}){
     return (
